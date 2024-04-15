@@ -1,0 +1,14 @@
+jupyter notebook
+python
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+pickle
+selenium
+chrome114
+webdriver_manager
+instaloader(if you run jupyter notebook)
+BeautifulSoup(if you run python app)
+requests
