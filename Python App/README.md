@@ -20,12 +20,19 @@ Select "Properties" from the context menu.
 In the Properties window, locate the "Startup type" dropdown menu.
 Change the startup type to "Disabled".
 Click on the "Apply" button, then click "OK" to save the changes.)
+
 3. **Open Terminal**: Open Terminal in "Python App" folder. 
+
 4. **Install Dependencies**: Install the required dependencies, You can do this by running `pip install Flask selenium webdriver-manager pandas requests beautifulsoup4 scikit-learn`.
+
 5. **Launch the App**: Launch the Flask app by entering `python app.py` in terminal.
+
 6. **Access the App**: Open your web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000). Alternatively, click the link provided in the terminal when you run `python app.py`.
+
 7. **Enter Instagram Username**: Enter the Instagram username of the influencer you want to analyze.
+
 8. **Check Fake Followers**: Click the "Check Fake Followers" button.
+
 9. **View Results**: The app will gather information about the followers of the specified Instagram account and assess their authenticity. Once the analysis is complete, you'll see the percentage of potentially fake followers displayed.
 
 *Note: If you encounter any login issues in Chrome, you can use your own temporary Instagram account credentials in Line 34 and 35 of the `app.py` file.*
