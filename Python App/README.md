@@ -31,7 +31,7 @@ Click on the "Apply" button, then click "OK" to save the changes.)
 
 7. **Enter Instagram Username**: Enter the Instagram username of the influencer you want to analyze.(Account should not be private)
 
-8. **Check Fake Followers**: Click the "Check Fake Followers" button and wait 1-2 minutes for result.
+8. **Check Fake Followers**: Click the "Check Fake Followers" button once and wait 1-2 minutes for result.
 
 9. **View Results**: The app will gather information about the followers of the specified Instagram account and assess their authenticity. Once the analysis is complete, you'll see the percentage of potentially fake followers displayed.
 
