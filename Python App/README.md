@@ -41,4 +41,4 @@ Click on the "Apply" button, then click "OK" to save the changes.)
 
 Velocite Instascan is created for educational and research purposes only. It relies on web scraping techniques and may be affected by changes in Instagram's website structure or policies. Please use this tool responsibly and always comply with Instagram's terms of service.
 
-**Created by Rishabh Acharya.**
+**Created by Rishabh Acharya**
