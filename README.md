@@ -16,19 +16,17 @@ The process involves collecting a dataset of real and fake accounts. This datase
 - **Excel:** Created datasets for model training and evaluation.
 - **Statistics:** Applied statistical analysis techniques to evaluate model performance.
 - **Data Visualization:** Visualized data and classification results.
-- **Data Analysis:** Analyzed follower data to extract relevant features.
 - **Exploratory Data Analysis (EDA):** Explored follower data to gain more insights.
-- **Data Modeling:** Developed machine learning models for follower classification.
 - **Data Manipulation:** Manipulated data for pre-processing.
 - **Data Cleaning:** Cleaned and sanitized raw follower data for training.
-- **Web Scraping:** Retrieved follower data from Instagram using web scraping techniques.
+- **Web Scraping:** Retrieved follower data from Instagram using web scraping techniques selenium and python automation.
 - **Feature Engineering:** For extracting useful features from the raw dataset.
 - **Web Development (Frontend):** Developed front-end using HTML/CSS for interacting with the application.
 
 ## Usage
 
 1. **Clone Repository:** Clone this repository to your computer.
-2. **Python App:** Run `app.py` in the "Python App" folder to directly check the fake followers percentage of any Instagram account. (Refer to the separate readme file provided for the application before launching `app.py`.)
+2. **Python App:** Run `app.py` in the "Python App" folder to directly check the fake followers percentage of any Instagram account. (Refer to the separate readme file provided in that folder before launching `app.py`.)
 3. **Review Project:** Open `end_to_end_Complete_Project.ipynb` in a Jupyter Notebook to review the complete project.
 
 ## Project Credits
