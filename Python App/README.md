@@ -11,16 +11,15 @@ To use this app, simply follow these steps:
     Type services.msc and press Enter to open the Services Management Console.
 
 Locate Google Update Service:
-
-    In the Services Management Console, scroll down and locate the service named "Google Update Service (gupdate)" or "Google Update Service (gupdatem)".
+In the Services Management Console, scroll down and locate the service named "Google Update Service (gupdate)" and "Google Update Service (gupdatem)".
 
 Disable Google Update Service:
 
-    Right-click on the Google Update service.
-    Select "Properties" from the context menu.
-    In the Properties window, locate the "Startup type" dropdown menu.
-    Change the startup type to "Disabled".
-    Click on the "Apply" button, then click "OK" to save the changes.)
+Right-click on the Google Update service.
+Select "Properties" from the context menu.
+In the Properties window, locate the "Startup type" dropdown menu.
+Change the startup type to "Disabled".
+Click on the "Apply" button, then click "OK" to save the changes.)
 3. **Open Terminal**: Open Terminal in "Python App" folder. 
 4. **Install Dependencies**: Install the required dependencies, You can do this by running `pip install Flask selenium webdriver-manager pandas requests beautifulsoup4 scikit-learn`.
 5. **Launch the App**: Launch the Flask app by entering `python app.py` in terminal.
