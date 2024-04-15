@@ -7,7 +7,7 @@ Velocite Instascan is a Flask web application developed to assist brands in eval
 To use this app, simply follow these steps:
 (follow steps 1-4 for the first time only)
 1. **Clone Repository**: Clone or download this repository to your computer.
-2. **Install Chrome114**: As this script uses selenium which supports chrome 114 please install it https://download.filepuma.com/files/web-browsers/google-chrome-64bit-/Google_Chrome_(64bit)_v114.0.5735.199.exe and don't run it,  disable auto update by opening services(    Press Windows key + R
+2. **Install Chrome114**: As this script uses selenium which supports chrome 114 please install it https://download.filepuma.com/files/web-browsers/google-chrome-64bit-/Google_Chrome_(64bit)_v114.0.5735.199.exe and don't run it,  disable auto update by deleting C:\Program Files\Google\Chrome this folder and open services(    Press Windows key + R
     Type services.msc and press Enter to open the Services Management Console.
 
 Locate Google Update Service:
