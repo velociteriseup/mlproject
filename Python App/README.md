@@ -8,7 +8,7 @@ To use this app, simply follow these steps:
 
 1. **Clone Repository**: Clone or download this repository to your computer.
 2. **Open Terminal**: Open Terminal in "Python App" folder. 
-3. **Install Dependencies**: Install the required dependencies listed in the `requirements.txt` file. You can do this by running `pip install -r requirements.txt`.
+3. **Install Dependencies**: Install the required dependencies, You can do this by running `pip install Flask selenium webdriver-manager pandas requests beautifulsoup4 scikit-learn`.
 4. **Launch the App**: Launch the Flask app by entering `python app.py` in terminal.
 5. **Access the App**: Open your web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000). Alternatively, click the link provided in the terminal when you run `python app.py`.
 6. **Enter Instagram Username**: Enter the Instagram username of the influencer you want to analyze.
