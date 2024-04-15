@@ -23,7 +23,7 @@ Click on the "Apply" button, then click "OK" to save the changes.)
 
 3. **Open Terminal**: Open Terminal in "Python App" folder. 
 
-4. **Install Dependencies**: Install the required dependencies, You can do this by running `pip install Flask selenium webdriver-manager pandas requests beautifulsoup4 scikit-learn`.
+4. **Install Dependencies**: Install the required dependencies, You can do this by running this command in terminal `pip install Flask selenium webdriver-manager pandas requests beautifulsoup4 scikit-learn`.
 
 5. **Launch the App**: Launch the Flask app by entering `python app.py` in terminal.
 
