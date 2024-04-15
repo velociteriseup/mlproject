@@ -26,7 +26,7 @@ The process involves collecting a dataset of real and fake accounts. This datase
 ## Usage
 
 1. **Clone Repository:** Clone this repository to your computer.
-2. **Python App:** Run `app.py` in the "Python App" folder to directly check the fake followers percentage of any Instagram account. (Refer to the separate readme file provided in that folder before launching `app.py`.)
+2. **Python App:** Run `app.py` in the "Python App" folder to directly check the fake followers percentage of any Instagram account. (Before that, Refer to the separate readme file provided in that folder and install dependencies before launching `app.py`.)
 3. **Review Project:** Open `end_to_end_Complete_Project.ipynb` in a Jupyter Notebook to review the complete project.
 
 ## Project Credits
