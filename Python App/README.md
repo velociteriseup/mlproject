@@ -35,7 +35,7 @@ Click on the "Apply" button, then click "OK" to save the changes.)
 
 9. **View Results**: The app will gather information about the followers of the specified Instagram account and assess their authenticity. Once the analysis is complete, you'll see the percentage of potentially fake followers displayed.
 
-*Note: If you encounter any login issues in Chrome, you can use your own temporary Instagram account credentials in Line 34 and 35 of the `app.py` file.*
+*Note: If you encounter any login issues in Automated Chrome or VALUE ERROR, you can use your own temporary Instagram account credentials in Line 34 and 35 of the `app.py` file.*
 
 ## Disclaimer
 
