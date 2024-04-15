@@ -29,7 +29,7 @@ Click on the "Apply" button, then click "OK" to save the changes.)
 
 6. **Access the App**: Open your web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000). Alternatively, click the link provided in the terminal when you run `python app.py`.
 
-7. **Enter Instagram Username**: Enter the Instagram username of the influencer you want to analyze.
+7. **Enter Instagram Username**: Enter the Instagram username of the influencer you want to analyze.(Account should not be private)
 
 8. **Check Fake Followers**: Click the "Check Fake Followers" button.
 
