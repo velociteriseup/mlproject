@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Fake Follower Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .loading {
+            display: none;
+            position: relative;
+            margin-right: 20px;
+        }
+        .loading:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 2px dotted #fff; /* Change circle color to white */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -10px 0 0 -10px;
+            animation: rotate 1s infinite linear;
+        }
+        @keyframes rotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .loading-text {
+            font-size: 16px;
+        }
+        button {
+            background-color: #ffcccc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 100%; /* Make button full width */
+            display: flex; /* Add flex display to center align items */
+            justify-content: center; /* Center align items horizontally */
+            align-items: center; /* Center align items vertically */
+        }
+        button:hover {
+            background-color: #ff6666;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instagram Fake Follower Checker</h1>
+    <form method="POST" onsubmit="startLoading()">
+        <label for="username">Enter Instagram Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <button type="submit" id="submitBtn">
+            <span class="loading" id="loadingIcon"></span>
+            <span class="loading-text" id="loadingText">Check Fake Followers</span>
+        </button>
+    </form>
+    <div class="footer">Project made by - <span style="color: #ff6666;">Rishabh Acharya</span></div>
+
+    <script>
+        function startLoading() {
+            var loadingIcon = document.getElementById("loadingIcon");
+            var loadingText = document.getElementById("loadingText");
+
+            // Show loading icon and change text
+            loadingIcon.style.display = "inline-block";
+            loadingText.textContent = "Please wait...";
+
+            // Disable submit button
+            document.getElementById("submitBtn").disabled = true;
+
+            setTimeout(function() {
+                loadingText.textContent = "Collecting list of followers of " + document.getElementById("username").value;
+            }, 5000); // After 5 seconds
+
+            setTimeout(function() {
+                loadingText.textContent = "Our AI model is analyzing followers of " + document.getElementById("username").value;
+            }, 15000); // After 15 seconds
+
+            setTimeout(function() {
+                loadingText.textContent = "Getting results";
+            }, 30000); // After 30 seconds
+
+            setTimeout(function() {
+                loadingText.textContent = "Please wait a minute for results!";
+                document.getElementById("submitBtn").disabled = false;
+            }, 45000); // After 45 seconds
+
+            // Prevent form from submitting multiple times
+            return false;
+        }
+    </script>
+</body>
+</html>
