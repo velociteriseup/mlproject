@@ -146,9 +146,10 @@ def scrape(username):
     user_input = 500  # It is limited to scrape 500 followers only you can increase if you want big dataset but that will take more time
 
     scrape_username = username
-
+    chrome_path = './chrome/chrome.exe'
     service = Service()
     options = webdriver.ChromeOptions()
+    options.binary_location = chrome_path
     # options.add_argument("--headless")
     options.add_argument('--no-sandbox')
     options.add_argument("--log-level=3")
@@ -183,7 +184,7 @@ def calculate_ratio(username):
 def get_user_data(username):
     url = f'https://www.instagram.com/{username}/'
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=5)
         if response.status_code == 200:
             soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -251,9 +252,24 @@ def main():
 
     from sklearn.metrics import accuracy_score
     rfpred = rfc.predict(tdata)
-    percentage_fake_followers = (sum(rfpred) / len(rfpred)) * 100
+    percentage_fake_followers = (sum(rfpred) / len(rfpred)) * 50
     print("Percentage of fake followers:", percentage_fake_followers,"%")
     return percentage_fake_followers  
+import multiprocessing
+def run_function_with_timeout():
+    # Start the function in a separate process
+    process = multiprocessing.Process(target=main)
+    process.start()
+
+    # Wait for the specified timeout
+    timeout = 10  # Timeout in seconds
+    process.join(timeout)
+
+    # If the process is still alive after the timeout, terminate it
+    if process.is_alive():
+        print("Timeout reached. Terminating the function...")
+        process.terminate()
+        process.join()
 @app.route('/', methods=['GET', 'POST'])
 def index():
     global percentage_fake_followers  
