@@ -31,8 +31,8 @@ def load_credentials():
     return None
 
 def prompt_credentials():
-    username = "vltcheckfacility"
-    password = "vltpass1"
+    username = "mlscpacc"
+    password = "@MLproject"
     save_credentials(username, password)
     return username, password
 
