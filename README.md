@@ -14,7 +14,7 @@ The process involves collecting a dataset of real and fake accounts. This datase
 - **Matplotlib & Seaborn:** Visualized data, classification results, and performance metrics.
 - **Python:** Developed the project and scripts using Python programming language.
 - **Excel:** Created datasets for model training and evaluation.
-- **Statistics:** Applied statistical analysis techniques to evaluate model performance.
+- **Statistics:** Applied feature engineering techniques to evaluate model performance.
 - **Data Visualization:** Visualized data and classification results.
 - **Exploratory Data Analysis (EDA):** Explored follower data to gain more insights.
 - **Data Manipulation:** Manipulated data for pre-processing.
