@@ -2,9 +2,9 @@
 
 ## Overview
 
-In this project I am aiming to develop a machine learning model for predicting the percentage of fake followers of Instagram accounts. It differentiates between real and fake followers based on various factors such as Username, Bio, Followers, Followings,  Follow Ratio, and Post Count.
+In this project I am focused to develop a machine learning model for predicting the percentage of fake followers of Instagram accounts. It differentiates between real and fake followers based on various factors such as Username, Bio, Followers, Followings,  Follow Ratio, and Post Count.
 
-The process involves collecting a dataset of real and fake accounts. This dataset will be used as training data for the predictive model, so the model learn to distinguish between real and fake followers. After successful training, the model is evaluated using different real test datasets to assess its performance in identifying fake and real accounts. The evaluation provides very clear insights into model's ability to distinguish between real and fake followers.
+The process involves collecting a dataset of real and fake accounts. This dataset will be used as training data for the predictive model, so the model learn to distinguish between real and fake followers. After successful training, the model is evaluated using different real test datasets to assess its performance in identifying fake and real accounts. The evaluation metrics provides very clear insights into model's ability to distinguish between real and fake followers.
 
 ## Skillset Demonstrated
 
