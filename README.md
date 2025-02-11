@@ -45,11 +45,11 @@ An automated solution for detecting fake Instagram followers using machine learn
 1. **User Input:**
    - Enter the target Instagram username in the web application.
 2. **Scraping Followers:**
-   - Selenium logs in and scrapes follower information.
+   - Selenium logs in and scrapes followers and their information.
    - Data is saved to `file.txt`.
 3. **Data Processing:**
    - Filter irrelevant usernames and clean the dataset.
-   - Extract key metrics (posts, followers, following ratios).
+   - Extract key metrics (posts, followers count, following count, following ratios, nums in username, length of bio).
 4. **Fake Follower Prediction:**
    - Predicts the percentage of fake followers using the Random Forest Classifier.
    - Displays the result in the web interface.
