@@ -82,7 +82,7 @@ An automated solution for detecting fake Instagram followers using machine learn
 
 ---
 
-## 🔧 Usage Instructions
+## Usage Instructions
 
 1. Open the browser and navigate to `http://127.0.0.1:5000`.
 2. Enter the Instagram username to analyze.
@@ -91,7 +91,7 @@ An automated solution for detecting fake Instagram followers using machine learn
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```plaintext
 .
