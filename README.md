@@ -1,34 +1,118 @@
-# Fake Instagram Followers Detection Using Machine Learning
+# Instagram Fake Followers Detection System
 
-## Overview
+An automated solution for detecting fake Instagram followers using machine learning and web scraping. This project combines the power of Selenium for Instagram automation, BeautifulSoup for data extraction, and a Random Forest Classifier for predicting the authenticity of followers.
 
-In this project I am focused to develop a machine learning model for predicting the percentage of fake followers of Instagram accounts. It differentiates between real and fake followers based on various factors such as Username, Bio, Followers, Followings,  Follow Ratio, and Post Count.
+---
 
-The process involves collecting a dataset of real and fake accounts. This dataset will be used as training data for the predictive model, so the model learn to distinguish between real and fake followers. After successful training, the model is evaluated using different real test datasets to assess its performance in identifying fake and real accounts. The evaluation metrics provides very clear insights into model's ability to distinguish between real and fake followers.
+##  Project Objectives
+- **Automate Instagram Data Collection**: Efficiently scrape and analyze Instagram account data.
+- **Detect Fake Followers**: Use machine learning to identify potentially fake or bot accounts.
+- **Present Results**: Display the percentage of fake followers in an intuitive web interface.
 
-## Skillset Demonstrated
+---
 
-- **AI/ML:** Machine learning algorithms for follower classification.
-- **Sklearn:** Implemented machine learning models from this library.
-- **Pandas & NumPy:** Preprocessed and transformed raw data for model training.
-- **Matplotlib & Seaborn:** Visualized data, classification results, and performance metrics.
-- **Python:** Developed the project and scripts using Python programming language.
-- **Excel:** Created datasets for model training and evaluation.
-- **Statistics:** Applied feature engineering techniques to evaluate model performance.
-- **Data Visualization:** Visualized data and classification results.
-- **Exploratory Data Analysis (EDA):** Explored follower data to gain more insights.
-- **Data Manipulation:** Manipulated data for pre-processing.
-- **Data Cleaning:** Cleaned and sanitized raw follower data for training.
-- **Web Scraping:** Retrieved follower data from Instagram using web scraping techniques selenium and python automation.
-- **Feature Engineering:** For extracting useful features from the raw dataset.
-- **Web Development (Frontend):** Developed front-end using HTML/CSS for interacting with the application.
+##  Key Features
 
-## Usage
+- **Instagram Automation**: Automates login and follower scraping using Selenium.
+- **Data Filtering**: Cleans and filters user data to ensure accurate predictions.
+- **Machine Learning Integration**: Utilizes a pre-trained Random Forest Classifier for follower classification.
+- **Web Application Interface**: Provides a user-friendly interface built with Flask.
+- **Timeout and Error Handling**: Implements robust mechanisms for handling page load delays and unexpected errors.
 
-1. **Clone Repository:** Clone this repository to your computer.
-2. **Review Project:** Open `end_to_end_Complete_Project.ipynb` in a Jupyter Notebook to review the complete project.
-3. **Python App:** Run `app.py` in the "Python App" folder to directly check the fake followers percentage of any Instagram account. (Before that, Refer to the separate readme file provided in that folder and install dependencies before launching `app.py`.)
+---
 
-## Project Credits
+## Tech Stack
 
-**Author:** Rishabh Acharya
+### **Languages & Frameworks:**
+- Python
+- Flask
+- Selenium
+- BeautifulSoup
+- Pandas
+- Scikit-Learn
+
+### **Tools:**
+- ChromeDriver (for Selenium)
+- WebDriver Manager
+
+### **Machine Learning Model:**
+- Random Forest Classifier (pre-trained in jupyter notebook and stored as `RF.pkl`)
+
+---
+
+## Workflow
+
+1. **User Input:**
+   - Enter the target Instagram username in the web application.
+2. **Scraping Followers:**
+   - Selenium logs in and scrapes follower information.
+   - Data is saved to `file.txt`.
+3. **Data Processing:**
+   - Filter irrelevant usernames and clean the dataset.
+   - Extract key metrics (posts, followers, following ratios).
+4. **Fake Follower Prediction:**
+   - Predicts the percentage of fake followers using the Random Forest Classifier.
+   - Displays the result in the web interface.
+5. **Data Cleanup:**
+   - Deletes temporary files after processing to ensure a clean slate for future tasks.
+
+---
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/Instagram-Fake-Followers-Detection.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Instagram-Fake-Followers-Detection
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Download ChromeDriver:
+   - [Download ChromeDriver](https://sites.google.com/chromium.org/driver/)
+   - Place it in the `chrome` folder.
+5. Run the Flask application:
+   ```bash
+   python app.py
+   ```
+
+---
+
+## 🔧 Usage Instructions
+
+1. Open the browser and navigate to `http://127.0.0.1:5000`.
+2. Enter the Instagram username to analyze.
+3. Click on submit to start the analysis.
+4. View the results with the percentage of fake followers.
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+.
+|-- app.py                 # Flask application and main logic
+|-- credentials.txt         # Stores Instagram login credentials
+|-- file.txt                # Temporary storage for scraped followers
+|-- RF.pkl                  # Pre-trained Random Forest Classifier
+|-- templates/              # HTML templates for Flask
+|   |-- index.html
+|   |-- result.html
+|-- requirements.txt        # List of Python dependencies
+|-- user_data.csv           # Temporary CSV for storing scraped user data
+|-- chrome/
+|   |-- chrome.exe          # ChromeDriver for Selenium
+```
+
+---
+
+## Security Note
+
+- Instagram credentials are temporarily stored in `credentials.txt`. Handle with care and do not expose sensitive information.
+
+---
+
