@@ -1,5 +1,6 @@
-https://github.com/velociteriseup/velociteriseup.github.io/blob/main/assets/img/ss3.png?raw=true
-https://github.com/velociteriseup/velociteriseup.github.io/blob/main/assets/img/ss1.png?raw=true
+![ss1](https://github.com/user-attachments/assets/2f776555-ce5d-49d4-9117-4331713771d0)
+![ss3](https://github.com/user-attachments/assets/5ef52267-4001-4120-8e43-493d4ff0a196)
+
 # Instagram Fake Followers Detection System
 
 An automated solution for detecting fake Instagram followers using machine learning and web scraping. This project combines the power of Selenium for Instagram automation, BeautifulSoup for data extraction, and a Random Forest Classifier for predicting the authenticity of followers.
